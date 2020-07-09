@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="loveCalc.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Fredoka+One|Roboto+Mono:700|Fugaz+One|Bungee+Outline|Permanent+Marker|Montserrat|Titan+One&display=swap" rel="stylesheet">
+    <title>Love Calculator</title>
+	
+</head>
+<body>
+<bgsound src="lovetune.mp3" loop="infinite">
+    <div id="wrapper">
+        <div class="header">
+            <h1 class="title"><em>Are you<br>and your crush <br>compatible?</em></h1>
+        </div>
+        <div class="main">
+            <h4>Loving you was only the second best thing in my life… meeting you was the first.  </h4>
+			<!-- write  your Love quotes here -->
+			<h2> Designed by: Saman KC    </h2> <!-- write  your Name here  -->
+			
+            <form>
+                <span class="hideForResult">
+                    <div class="yourName">
+                        <label id="enterName" for="crushName">Enter Your Name:</label><br>
+                        <input type="text" name="yourName" id="yourName">
+                    </div>
+                    <br>
+                    <div class="crushName">
+                        <label id="enterName" for="crushName">Enter Your Crush Name:</label><br>
+                        <input type="text" name="crushName" id="crushName">
+                    </div>
+                    <button type="button"><img src="love2.gif" class="btnIcon"></button>
+                </span>
+                <div id="resultNumber"></div>
+                <div id="explanation">
+                </div>
+                <button id="tryAgain" onclick="window.history.go(-1)">Try Again?</button>
+            </form>
+        </div>  
+    </div>
+	    <script src="loveCalc.js"></script>
+</body>
+</html>
